@@ -1,73 +1,189 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title>Aramizkingh | Full Stack Developer</title>
-        <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device width" , initial-scale="1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Aramizkingh portfolio website</title>
+    <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <div class="container">
-        <!--hero section-->
-        <section class="hero">
-        <h1>Aramizkingh</h1>
-        <h2>Full Stack Developer</h2>
-        <P>i build fast, modern and scalable web applications.</P>
-        <a href="#myProjects" id="projectbutton" class="btn">view projects</a>
-        <a href="#contact" id="hirebutton" class="btn" >Hire me</a>
-        </section>
-        <!--About me section-->
-        <div class="AboutMe">
-        <h2>About Me</h2>
-        <p>Iam passionate Full Stack Developer focused on building clean, responsive and user-friendly Web application. I enjoy solving real-World problems using modern technologies</p>
-        </div>
-        <!--skills section-->
-        <section class="skillsSection">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">Javascript</div>
-        <div class="skill">React</div>
-        <div class="skill">Git & GitHub</div>
-        </div>
-        </section>
-        <!--PROJECT SECTION-->
-        <section class="projects">
-         <div id="myProjects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <img src="image/myphoto.jpeg" alt="project" >
-            <div class="project-overlay">
-            <h3>linktree-clone</h3>
-            <p>Modern responsive link-in-bio Website.</p>
-            <div class="project-links">
-            <a href="#" class="Demo">Live Demo </a>
-            <a href="#" class="Demo">Github</a>
+<body>
+    <!--HERO SECTION-->
+    <section class="hero-section">
+        <div class="hero-content">
+            <p id="first">Hello, Im</p>
+            <h1>Aramizkingh</h1>
+            <h2>Full Stack Developer</h2>
+            <p id="second">i build fast, modern and scalable web applications.</p>
+            <div class="buttons">
+            <a href="#" target="_blank" rel="noopener noreferrer" id="view-project">View projects</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" id="hire me">Hire Me</a>
             </div>
+            <p>find me on</p>
+            <div class="icons">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
             </div>
         </div>
-        <div class="project-card">
-            <h3>Landing Page</h3>
-            <p>High converting landing page design</p>
+        <div id="myphoto">
+            <img src="image/profile.png"  alt="profile photo">
         </div>
-        <div class="project-card">
-            <h3>Forex Dashboard</h3>
-            <p>Simple dashboard for tracking forex data.</p>
+    </section>
+    <!--ABOUT ME SECTION-->
+    <section class="about-Me">
+        <div class="aboutMe-information">
+            <p id="firstp">About Me</p>
+            <h2>Building digital products, brands and experiences.</h2>
+            <p id="secondp">I am a passionate Full Stack Developer focused on building clean, responsive and user-friendly web applications. I enjoy solving real-world problems using modern technologies</p>
         </div>
+        <div class="addition-information">
+            <div id="experience">
+                <a href="#"><i class="fas fa-calendar"></i><span>Experience <br> 2+Years</span></a>
+            </div>
+            <div id="projects completed">
+                <a href="#"><i class="fas fa-briefcase"></i><span>projects completed <br>10+</span></a>
+            </div>
+            <div id="Technologies">
+                <a href="#"><i class="fas fa-code"></i><span>Technologies<br> 10+</span></a>
+            </div>
+            <div id="Location">
+                <a href="#"><i class="fas fa-map-marker-alt"></i><span>Location<br> Tanzania</span></a>
+            </div>
+        </div>
+    </section>
+    <!--SKILLS SECTION-->
+    <section class="skill-section">
+        <div class="skills layout">
+            <p id="openskills">Skills</p>
+            <h2 id="h2">Technologies i work with</h2>
+        </div>
+        <div class="setOfMySkills">
+            <div class="skill">
+                <i class="fab fa-html5" id="html"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt" id="css"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js" id="js"></i>
+                <p>Javascript</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react" id="react"></i>
+                <p>React</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-node-js" id="node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="30" id="express">
+                <p>Express.js</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-leaf" id="mongodb"></i>
+                <p>MongoDB</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-git-alt" id="git-alt"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-github" id="github"></i>
+                <p>Github</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-map" id="tailwind"></i>
+                <p>Tailwind Css</p>
+            </div>
+        </div>
+    </section>
+    <!--PROJECTS SECTION-->
+    <section class="projects-section">
+        <p>Projects</p>
+        <h2>Some of my recent work</h2>
+         <div class="MyProjects">
+            <div class="project">
+                <img src="#">
+                <div class="projects-layout">
+                    <h3>linktree-clone</h3>
+                    <p>Modern responsive link-in-bio website</p>
+                </div>
+                <div class="projects-button">
+                    <a href="#" class="livedemo-button">Live Demo</a>
+                    <a href="#" id="github-button">GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="#">
+                <div class="projects-layout">
+                    <h3>Landing Page</h3>
+                    <p>High converting landing page design</p>
+                </div>
+                <div class="projects-button">
+                    <a href="#" class="livedemo-button">Live Demo</a>
+                    <a href="#" id="github-button">Github</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="#">
+                <div class="projects-layout">
+                    <h3>Forex Dashboard</h3>
+                    <p>Simple dashboard for tracking forex data</p>
+                </div>
+                <div class="projects-button">
+                    <a href="#" class="livedemo-button">Live Demo</a>
+                    <a href="#" id="github-button">Github</a>
+                </div>
+            </div>
          </div>
-        </section>
-        <!--contact section-->
-        <div id="contact">
-            <h2>contact</h2>
-            <p>Email: aramizkingh@gmail.com</p>
-            <p>WhatsApp: +255677628484</p>
+         <div class="moreProjects">
+         <a href="#">View More Projects</a>
+         </div>
+    </section>
+    <!--CONTACT SECTION-->    
+    <section class="myContats">
+        <p id="contactp">Contact</p>
+        <div class="contact-layout">
+            <h2>lets work together</h2>
+            <p>Im currently open to new opportunities. Feel free to contact me.</p>
         </div>
-        <!--footer section-->
-        <footer>
-            &copy2026 Aramizkingh.All rights reserved
-        </footer>
+        <div class="contact-info">
+            <div class="contact">
+                <a href="#"><i class="fas fa-envelope" id="envelope"></i>Email<br>aramizkingh@gmail.com</a>
+            </div>
+            <div class="contact">
+                <a href="https://wa.me/255677628484" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" id="whatsapp"></i>whatsApp<br>+255677628484</a>
+            </div>
         </div>
-    </body>
+    </section>
+    <!--FOOTER SECTION-->
+    <section class="footer">
+        <div class="right-footer">
+            <h2>Aramizkingh</h2>
+            <footer>
+                &copy Aramizkingh. All rights reserved.
+            </footer>
+        </div>
+        <div class="middle-footer">
+            <p>Home</p>
+            <p>About</p>
+            <p>Skills</p>
+            <p>projects</p>
+            <p>contact</p>
+        </div>
+        <div>
+            <i class="fab fa-github" class="icon"></i>
+            <i class="fab fa-linkedin" class="icon"></i>
+            <i class="fab fa-instagram" class="icon"></i>
+            <i class="fab fa-youtube" class="icon"></i>
+            <i class="fab fa-twitter" class="icon"></i>
+        </div>
+    </section>  
+</body>
 </html>
