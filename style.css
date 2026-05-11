@@ -8,18 +8,68 @@ body{
     align-items: center;
     height: 100vh;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'poppins',sans-serif;
     width:100%;
+    padding-top: 80px;
+}
+/*HEADER SECTION*/
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+h3{
+    font-size:20px;
+    font-weight: bold;
+    color:white
+}
+h3 span{
+    color:#3b82f6;
+}
+.links{
+    display: flex;
+    list-style: none;
+    gap:25px
+}
+.links a{
+    text-decoration: none;
+    color:white;
+    transition: 0.3s;
+    font-size:14px;
+}
+.links a:hover{
+    color: #3b82f6;
+    text-decoration: underline;
+}
+.hireme a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #3b82f6;
+    border-radius: 20px;
+    padding:8px 15px;
+}
+.hireme a:hover{
+    background-color: #3b82f6;
 }
 /*HERO SECTION*/
 .hero-section{
+    position:relative;
     min-height: 100vh;
     width:100%;
     display:flex;
     justify-content: space-between;
-    padding:80px 10% ;
-    background:radial-gradient(circle at 75% 35%, rgba(37,99,235,0.45),transparent 30%),linear-gradient(135deg,#020617 0%,#020617 40%, #020617 100%);
-    overflow: hidden;
+    background:radial-gradient(circle at 70% 50%, rgba(59,130,246,0.2),transparent 40%),#020617;
+    padding:0 80px;
+    align-items: center;
 }
 .hero-content{
     width: 50%;
@@ -38,11 +88,16 @@ body{
     color:#3b82f6;
 }
 .hero-content h1{
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
 .hero-section h2{
-    font-size:40px;
-    color:#3b82f6;
+    font-size:28px;
+    background: linear-gradient(90deg,#3b82f6,#00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #second{
     opacity: 70px;
@@ -52,30 +107,54 @@ body{
     border:1px solid #3b82f6;
     text-decoration: none;
     color:white;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 12px 25px;
+    border-radius: 25px;
 }
 #view-project{
     color:white;
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    box-shadow: 0 0 20px rgba(59,130,246,0.5);
+    transition: 0.3s;
+}
+#view-project:hover{
+    transform: scale(1.05);
+}
+#hire:hover{
     background-color: #3b82f6;
+}
+.findme{
+    position:relative;
+    top:35px;
 }
 .icons{
     display:flex;
     gap:15px;
+    position: relative;
+    top:15px;
+    margin-top: 10px;
+}
+.icons i{
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.05);
+    padding:7px;
 }
 #myphoto img{
+    overflow: hidden;
     width: 450px;
     height: 450px;
     border-radius: 50%;
-    overflow: hidden;
     position:relative;
 }
+
 /*ABOUT ME SECTION*/
 .about-Me{
     display:flex;
     justify-content: space-between;
     min-height:100%;
-    padding: 50px 10%;
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin:auto;
+    gap:100px;
 }
 .aboutMe-information{
     width:50%;
@@ -100,15 +179,15 @@ font-size: 35px;
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter:blur(80px);
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
     width: 50%;
-    height: 60%;
+    height: 50%;
     border:1px solid rgba(255,255,255,0.05);
 }
 .addition-information a{
     display: flex;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 15px;
     text-decoration: none;
     color:#3b82f6;
 }
@@ -185,19 +264,80 @@ span{
     font-size:45px;
     font-weight: bolder;
  }
+ .progress-bar{
+    width:100%;
+    height:8px;
+    background: rgba(255,255,255,0.05);
+    border-radius:20px;
+ }
+ .html-progress{
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    height: 100%;
+    width:95%
+ }
+ .css-progress{
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    height:100%;
+    width:90%;
+ }
+ .js-progress{
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    height:100%;
+    width:85%;
+ }
+ .react-progress{
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    height:100%;
+    width:80%;
+ }
+ .nodejs-progress{
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    height:100%;
+    width:80%;
+ }
+ .expressjs-progress{
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    height:100%;
+    width:75%;
+ }
+ .mongodb-progress{
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    height:100%;
+    width:75%;
+ }
+ .g-progress{
+    background:linear-gradient(#3b82f6,#00aaff);
+    height:100%;
+    width:90%;
+ }
+ .github-progress{
+    background: linear-gradient(90deg,#3b82f6,#00aaff);
+    height: 100%;
+    width:90%;
+ }
+ .tailwind-progress{
+    background:linear-gradient(90deg,#3b82f6,#00aaff);
+    height: 100%;
+    width: 85%;
+ }
+ .value{
+    color:rgba(255,255,255,0.3);
+ }
  /*PROJECT SECTION*/
  .projects-section p{
-    color:#3b82f6
+    color:#3b82f6;
  }
  .projects-section h2{
     font-size:35px;
  }
  .project{
+    position: relative;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
     padding:30px;
     border-radius:15px;
     border:1px solid rgba(255,255,255,0.05);
+    bottom: 20px;
  }
  .MyProjects{
     display: grid;
@@ -208,12 +348,12 @@ span{
     text-decoration: none;
     color: white;
     border:1px solid #3b82f6;
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 15px;
  }
  .projects-button{
     display: flex;
-    gap: 15px;
+    gap: 60px;
  }
  .projects-layout{
     display:flex;
@@ -225,28 +365,50 @@ span{
     text-decoration:none;
     color:#3b82f6;
     border:solid 1px #3b82f6;
-    border-radius:15px;
-    padding:20px;
+    border-radius:20px;
+    padding:15px;
  }
  .moreProjects{
-    margin-top: 40px;
+    position: relative;
+    margin-top: 30px;
+    bottom: 15px;
  }
 .projects-section{
     height: 100vh;
+    margin-top: 30px;
+    padding: 50px;
 }
 .livedemo-button{
     background-color: #3b82f6;
+    padding: 15px;
+    border-radius: 20px;
+}
+.photo{
+    width:100%;
+    border-radius: 15px;
+    height: 180px;
+    object-fit: cover;
+}
+.top{
+    position: relative;
+    bottom:20px;
 }
 /*CONTACT SECTION*/
+.myContacts{
+    margin-top: 70px;
+    padding: 50px;
+}
 #contactp{
     color: #3b82f6;
 }
 .contact-layout h2{
     font-size:35px;
+    text-align: center;
 }
 .contact-layout p{
     color:rgba(255,255,255,0.5);
-    opacity: 5px;
+    opacity: 0.7px;
+    text-align: center;
 }
 .contact a{
     background: rgba(255,255,255,0.05);
@@ -256,7 +418,7 @@ span{
     color: white;
     text-decoration: none;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     border:1px solid rgba(255,255,255,0.05);
 
 }
@@ -265,21 +427,32 @@ span{
     grid-template-columns: repeat(2,1fr);
     gap:15px;
 }
+#envelope,#whatsapp{
+font-size: 24px;
+padding: 15px;
+border-radius: 50%;
+background: rgba(255,255,255,0.05);
+position: relative;
+}
 #envelope{
     color:#3b82f6;
-    border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.03);
-    padding:10px;
-    font-size: 20px;
-    font-weight: bolder;
 }
 #whatsapp{
-    color:green;
-    border-radius:50%;
-    border:1px solid rgba(255,255,255,0.03);
-    padding:10px;
-    font-size:20px;
-    font-weight: bolder;
+    color:#25d366;
+}
+.information{
+    position: relative;
+    text-align: center;
+    padding-left: 70px;
+    bottom: 70px;
+    line-height: 0.7;
+}
+#email{
+    padding-right: 135px;
+    color: rgba(255,255,255,0.5);
+}
+#number{
+    color: rgba(255,255,255,0.5);
 }
 /*FOOTER SECTION*/
 .right-footer{
@@ -288,10 +461,36 @@ span{
     align-items: flex-start;
     margin-bottom: 0;
     justify-content: left;
+    font-size: 14px;
 }
 .middle-footer{
     display: flex;
-    gap:10px;
+    gap:20px;
     justify-content: center;
     margin-bottom: 0;
+    text-align: center;
+}
+.footer{
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.01);
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    padding: 25px 50px;
+    margin-bottom: 0; background:radial-gradient(circle at 70% 50%, rgba(59,130,246,0.2),transparent 40%),#020617;
+    align-items: center;
+}
+.genious{
+    color:#3b82f6;
+}
+.footer-icons{
+    display: flex;
+    gap:15px;
+}
+.footer-icons i{
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding: 12px;
+    font-size: 16px;
 }

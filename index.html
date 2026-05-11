@@ -6,8 +6,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Aramizkingh portfolio website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     </head>
 <body>
+    <!--HEADER SECTION-->
+        <header class="navbar">
+            <div class="name">
+                <h3>Aramiz<span>kingh</span></h3>
+            </div>
+            <nav>
+                <ul class="links">
+                    <li><a href=".hero-content">Home</a></li>
+                    <li><a href=".about-Me">About</a></li>
+                    <li><a href=".skill-section">Skills</a></li>
+                    <li><a href=".projects-section">Projects</a></li>
+                    <li><a href=".myContacts">contact</a></li>
+                </ul>
+            </nav>
+            <div class="hireme">
+                <a href="#">Hire Me</a>
+            </div>
+        </header>
     <!--HERO SECTION-->
     <section class="hero-section">
         <div class="hero-content">
@@ -16,10 +35,10 @@
             <h2>Full Stack Developer</h2>
             <p id="second">i build fast, modern and scalable web applications.</p>
             <div class="buttons">
-            <a href="#" target="_blank" rel="noopener noreferrer" id="view-project">View projects</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" id="hire me">Hire Me</a>
+            <a href=".projects-section" target="_blank" rel="noopener noreferrer" id="view-project">View projects <i class="fas fa-arrow-right"></i></a>
+            <a href=".myContacts" target="_blank" rel="noopener noreferrer" id="hire">Hire Me <i class="fas fa-download"></i></a>
             </div>
-            <p>find me on</p>
+            <p class="findme">find me on</p>
             <div class="icons">
             <i class="fab fa-github"></i>
             <i class="fab fa-linkedin"></i>
@@ -29,6 +48,9 @@
             </div>
         </div>
         <div id="myphoto">
+            <div class="orbit"></div>
+            <div class="dot dot1"></div>
+            <div class="dot dot2"></div>
             <img src="image/profile.png"  alt="profile photo">
         </div>
     </section>
@@ -64,52 +86,92 @@
             <div class="skill">
                 <i class="fab fa-html5" id="html"></i>
                 <p>HTML</p>
+                <div class="progress-bar">
+                    <div class="html-progress"></div>
+                </div>
+                <span class="value">95%</span>
             </div>
             <div class="skill">
                 <i class="fab fa-css3-alt" id="css"></i>
                 <p>CSS</p>
+                <div class="progress-bar">
+                    <div class="css-progress"></div>
+                </div>
+                <span class="value">90%</span>
             </div>
             <div class="skill">
                 <i class="fab fa-js" id="js"></i>
                 <p>Javascript</p>
+                <div class="progress-bar">
+                    <div class="js-progress"></div>
+                </div>
+                <span class="value">85%</span>
             </div>
             <div class="skill">
                 <i class="fab fa-react" id="react"></i>
                 <p>React</p>
+                <div class="progress-bar">
+                    <div class="react-progress"></div>
+                </div>
+                <span class="value">80%</span>
             </div>
             <div class="skill">
                 <i class="fab fa-node-js" id="node-js"></i>
                 <p>Node.js</p>
+                <div class="progress-bar">
+                    <div class="nodejs-progress"></div>
+                </div>
+                <span class="value">80%</span>
             </div>
             <div class="skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="30" id="express">
                 <p>Express.js</p>
+                <div class="progress-bar">
+                    <div class="expressjs-progress"></div>
+                </div>
+                <span class="value">75%</span>
             </div>
             <div class="skill">
                 <i class="fas fa-leaf" id="mongodb"></i>
                 <p>MongoDB</p>
+                <div class="progress-bar">
+                    <div class="mongodb-progress"></div>
+                </div>
+                <span class="value">75%</span>
             </div>
             <div class="skill">
                 <i class="fab fa-git-alt" id="git-alt"></i>
                 <p>Git</p>
+                <div class="progress-bar">
+                    <div class="g-progress"></div>
+                </div>
+                <span class="value">90%</span>
             </div>
             <div class="skill">
                 <i class="fab fa-github" id="github"></i>
                 <p>Github</p>
+                <div class="progress-bar">
+                    <div class="github-progress"></div>
+                </div>
+                <span class="value">90%</span>
             </div>
             <div class="skill">
                 <i class="fas fa-map" id="tailwind"></i>
                 <p>Tailwind Css</p>
+                <div class="progress-bar">
+                    <div class="tailwind-progress"></div>
+                </div>
+                <span class="value">85%</span>
             </div>
         </div>
     </section>
     <!--PROJECTS SECTION-->
     <section class="projects-section">
         <p>Projects</p>
-        <h2>Some of my recent work</h2>
+        <h2 class="top" >Some of my recent work</h2>
          <div class="MyProjects">
             <div class="project">
-                <img src="#">
+                <img src="image/myphoto.jpeg" class="photo">
                 <div class="projects-layout">
                     <h3>linktree-clone</h3>
                     <p>Modern responsive link-in-bio website</p>
@@ -120,7 +182,7 @@
                 </div>
             </div>
             <div class="project">
-                <img src="#">
+                <img src="image/landing-page.jpeg" class="photo">
                 <div class="projects-layout">
                     <h3>Landing Page</h3>
                     <p>High converting landing page design</p>
@@ -131,10 +193,10 @@
                 </div>
             </div>
             <div class="project">
-                <img src="#">
+                <img src="image/forex-dashboard.jpeg" class="photo">
                 <div class="projects-layout">
                     <h3>Forex Dashboard</h3>
-                    <p>Simple dashboard for tracking forex data</p>
+                    <p>Simple-dashboard for trackforex data</p>
                 </div>
                 <div class="projects-button">
                     <a href="#" class="livedemo-button">Live Demo</a>
@@ -143,29 +205,41 @@
             </div>
          </div>
          <div class="moreProjects">
-         <a href="#">View More Projects</a>
+         <a href="#">View More Projects <i class="fas fa-arrow-right"></i></a>
          </div>
     </section>
     <!--CONTACT SECTION-->    
-    <section class="myContats">
+    <section class="myContacts">
         <p id="contactp">Contact</p>
         <div class="contact-layout">
-            <h2>lets work together</h2>
+            <h2>let′s work Together</h2>
             <p>Im currently open to new opportunities. Feel free to contact me.</p>
         </div>
         <div class="contact-info">
             <div class="contact">
-                <a href="#"><i class="fas fa-envelope" id="envelope"></i>Email<br>aramizkingh@gmail.com</a>
+                <a href="#">
+                    <i class="fas fa-envelope" id="envelope"></i>
+                <div class="information">
+                <h3  id="email">Email</h3>
+                <p>aramizkingh@gmail.com</p>
+                </div>
+                </a>
             </div>
             <div class="contact">
-                <a href="https://wa.me/255677628484" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" id="whatsapp"></i>whatsApp<br>+255677628484</a>
+                <a href="#">
+                    <i class="fab fa-whatsapp" id="whatsapp"></i>
+                <div class="information">
+                <h3 id="number">WhatsApp</h3>
+                <p>+255666019018</p>
+                </div>
+                </a>
             </div>
         </div>
     </section>
     <!--FOOTER SECTION-->
     <section class="footer">
         <div class="right-footer">
-            <h2>Aramizkingh</h2>
+            <h2>Aramiz<span class="genious">kingh</span></h2>
             <footer>
                 &copy Aramizkingh. All rights reserved.
             </footer>
@@ -177,7 +251,7 @@
             <p>projects</p>
             <p>contact</p>
         </div>
-        <div>
+        <div class="footer-icons">
             <i class="fab fa-github" class="icon"></i>
             <i class="fab fa-linkedin" class="icon"></i>
             <i class="fab fa-instagram" class="icon"></i>
