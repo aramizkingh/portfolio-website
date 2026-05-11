@@ -6,11 +6,10 @@ body{
     color:white;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    overflow-x: hidden;
     text-align: center;
     font-family:'poppins',sans-serif;
     width:100%;
-    max-width: 1500px;
     padding-top: 80px;
 }
 /*HEADER SECTION*/
@@ -375,7 +374,6 @@ span{
     bottom: 15px;
  }
 .projects-section{
-    height: 100vh;
     margin-top: 30px;
     padding: 50px;
 }
@@ -494,4 +492,152 @@ position: relative;
     border:1px solid rgba(255,255,255,0.1);
     padding: 12px;
     font-size: 16px;
+}
+@media (max-width:768px){
+
+/* NAVBAR */
+.navbar{
+    padding:15px 20px;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:0;
+}
+
+/* HERO SECTION */
+.hero-section{
+    flex-direction:column-reverse;
+    padding:40px 20px;
+    text-align:center;
+    gap:40px;
+}
+
+.hero-content{
+    width:100%;
+    align-items:center;
+    line-height:1.3;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.hero-section h2{
+    font-size:24px;
+}
+
+#myphoto img{
+    width:250px;
+    height:250px;
+}
+
+/* BUTTONS */
+.buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:100%;
+}
+
+.buttons a{
+    width:100%;
+}
+
+/* ABOUT SECTION */
+.about-Me{
+    flex-direction:column;
+    padding:50px 20px;
+    gap:40px;
+}
+
+.aboutMe-information{
+    width:100%;
+    align-items:center;
+    text-align:center;
+}
+
+.aboutMe-information h2{
+    font-size:40px;
+}
+
+.addition-information{
+    width:100%;
+}
+
+/* SKILLS */
+.setOfMySkills{
+    grid-template-columns:1fr 1fr;
+}
+
+#h2{
+    font-size:40px;
+}
+
+/* PROJECTS */
+.MyProjects{
+    grid-template-columns:1fr;
+}
+
+.projects-section{
+    padding:30px 20px;
+}
+
+.project{
+    width:100%;
+}
+
+.projects-button{
+    gap:20px;
+    justify-content:center;
+}
+
+.projects-layout{
+    line-height:1.3;
+}
+
+/* CONTACT */
+.contact-info{
+    grid-template-columns:1fr;
+}
+
+.contact-layout h2{
+    font-size:50px;
+}
+
+.contact a{
+    width:100%;
+}
+
+.information{
+    padding-left:0;
+    bottom:0;
+    margin-top:15px;
+    line-height:1.5;
+}
+
+#email{
+    padding-right:0;
+}
+
+/* FOOTER */
+.footer{
+    flex-direction:column;
+    gap:30px;
+    padding:30px 20px;
+}
+
+.middle-footer{
+    flex-wrap:wrap;
+}
+
+.footer-icons{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 }
