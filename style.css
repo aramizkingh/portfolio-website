@@ -27,12 +27,12 @@ body{
     padding: 15px 50px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-h3{
+#name-nav{
     font-size:20px;
     font-weight: bold;
-    color:white
+    color:white;
 }
-h3 span{
+#name-nav span{
     color:#3b82f6;
 }
 .links{
@@ -63,8 +63,8 @@ h3 span{
 /*HERO SECTION*/
 .hero-section{
     position:relative;
-    min-height: 100vh;
     width:100%;
+    min-height: 100vh;
     display:flex;
     justify-content: space-between;
     background:radial-gradient(circle at 70% 50%, rgba(59,130,246,0.2),transparent 40%),#020617;
@@ -494,3 +494,143 @@ position: relative;
     padding: 12px;
     font-size: 16px;
 }
+/*RESPONSIVENESS-DESIGN*/
+@media(max-width:768px){
+    /*navbar*/
+    .navbar{
+        flex-wrap: wrap;
+        padding:5px 10px;
+        flex-direction: column;
+        width: 100%;
+        line-height: 1px;
+    }
+    #name-nav{
+        position:relative;
+        right:95px;
+    }
+    .hireme a{
+        position:relative;
+        bottom: 56px;
+        left: 137px;
+        overflow:hidden;
+    }
+    /*HERO SECTION*/
+    .hero-section{
+        flex-wrap: wrap;
+        padding:20px;
+        height: 40vh;
+    }
+    .hero-content{
+        gap:2px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-content h1{
+        font-size:30px;
+    }
+    .hero-content h2{
+        position:relative;
+        font-size:20px;
+        font-family: sans-serif;
+        bottom:20px;
+    }
+    #second{
+        position:relative;
+        bottom: 40px;
+        line-height: 1.2;
+    }
+    .buttons a{
+        display: grid;
+    }
+    #hire{
+        position:relative;
+        left:170px;
+        bottom:65px;
+    }
+    #myphoto img{
+        position:relative;
+        width: 200px;
+        bottom:500px;
+        left:200px;
+    }
+    /*ABOUT-ME SECTION*/
+    .about-Me{
+        flex-wrap:wrap;
+        padding: 20px 5%;
+    }
+    .aboutMe-information{
+        position: relative;
+        width: 100%;
+    }
+    .addition-information{
+        width: 100%;
+    }
+    /*SKILLS SECTION*/
+    .setOfMySkills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /*PROJECTS SECTION*/
+    .MyProjects{
+        display:grid;
+        grid-template-columns:1fr;
+    } 
+    .project-p{
+        line-height:1.1;
+    } 
+    .project{
+        width:300px;
+    }
+    /*CONTACT SECTION*/
+    .myContacts{
+        padding: 10px;
+        margin-top:30px;
+    }
+    .contact a{
+        padding: 0.1px;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    /*FOOTER SECTION*/
+    .footer{
+        padding:5px 10px;
+        flex-wrap: wrap;
+        line-height: 0.5;
+        font-size: xx-small;
+    }
+    .footer-icons{
+        gap:9px;
+    }
+    .footer-icons i{
+        position:relative;
+        font-size:7px;
+        padding: 6px;
+        left: 200px;
+    }
+    .right-footer{
+        position:relative;
+        top: 20px;
+        font-size: 7px;
+    }
+    .middle-footer{
+        position: relative;
+        right:70px;
+    }
+    #envelope,#whatsapp{
+        position:relative;
+        top:20px;
+        left:10px;
+    }
+    #email,#number{
+        position:relative;
+        top:20px;
+    }
+    #p{
+        position:relative;
+        top:20px;
+    }
+    }
+  
