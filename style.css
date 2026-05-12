@@ -506,24 +506,29 @@ position: relative;
     }
     #name-nav{
         position:relative;
-        right:95px;
+        right: 100px;
+    }
+    .links{
+        position:relative;
+        right:17px;
     }
     .hireme a{
         position:relative;
         bottom: 56px;
-        left: 137px;
+        left: 130px;
         overflow:hidden;
     }
     /*HERO SECTION*/
     .hero-section{
         flex-wrap: wrap;
         padding:20px;
-        height: 40vh;
+        align-items: flex-start;
+        background:radial-gradient(circle at 70% 50%, rgba(59,130,246,0.2),transparent 40%),#020617;
     }
     .hero-content{
-        gap:2px;
-        display: flex;
-        flex-direction: column;
+        position: relative;
+        width: 100%;
+        top: 200px;
     }
     .hero-content h1{
         font-size:30px;
@@ -537,7 +542,8 @@ position: relative;
     #second{
         position:relative;
         bottom: 40px;
-        line-height: 1.2;
+        line-height:1.2;
+        right:20px
     }
     .buttons a{
         display: grid;
@@ -550,8 +556,9 @@ position: relative;
     #myphoto img{
         position:relative;
         width: 200px;
-        bottom:500px;
-        left:200px;
+        height: 200px;
+        bottom: 500px;
+        left: 50px;
     }
     /*ABOUT-ME SECTION*/
     .about-Me{
