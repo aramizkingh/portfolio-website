@@ -98,6 +98,8 @@ body{
     background: linear-gradient(90deg,#3b82f6,#00aaff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight:600px;
+    padding: 6px 0;
 }
 #second{
     opacity: 70px;
@@ -679,7 +681,8 @@ position: relative;
     .hero-section{
         flex-wrap: wrap;
         padding:20px;
-        align-items: center;
+        align-items: center; background:radial-gradient(circle at 70% 50%, rgba(59,130,246,0.2),transparent 40%),#020617;
+
     }
     .hero-content{
         position:relative;
