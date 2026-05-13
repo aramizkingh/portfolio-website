@@ -61,7 +61,7 @@ body{
     background-color: #3b82f6;
 }
 /*HERO SECTION*/
-.hero-section{
+#hero-section{
     position:relative;
     width:100%;
     min-height: 100vh;
@@ -93,7 +93,7 @@ body{
     color: white;
     text-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
-.hero-section h2{
+#hero-section h2{
     font-size:28px;
     background: linear-gradient(90deg,#3b82f6,#00aaff);
     -webkit-background-clip: text;
@@ -149,7 +149,7 @@ body{
 }
 
 /*ABOUT ME SECTION*/
-.about-Me{
+#about-Me{
     display:flex;
     justify-content: space-between;
     min-height:100%;
@@ -197,7 +197,7 @@ span{
     color:white;
 }
 /*SKILLS SECTION*/
-.skill-section{
+#skill-section{
     height: 100%;
     padding: 15px;
 }
@@ -327,10 +327,10 @@ span{
     color:rgba(255,255,255,0.3);
  }
  /*PROJECT SECTION*/
- .projects-section p{
+ #projects-section p{
     color:#3b82f6;
  }
- .projects-section h2{
+ #projects-section h2{
     font-size:35px;
  }
  .project{
@@ -376,7 +376,7 @@ span{
     margin-top: 30px;
     bottom: 15px;
  }
-.projects-section{
+#projects-section{
     margin-top: 30px;
     padding: 50px;
 }
@@ -396,7 +396,7 @@ span{
     bottom:20px;
 }
 /*CONTACT SECTION*/
-.myContacts{
+#myContacts{
     margin-top: 70px;
     padding: 50px;
 }
@@ -522,7 +522,7 @@ position: relative;
         overflow:hidden;
     }
     /*HERO SECTION*/
-    .hero-section{
+    #hero-section{
         flex-wrap: wrap;
         padding:20px;
         align-items: flex-start;
@@ -574,7 +574,7 @@ position: relative;
         left: 70px;
     }
     /*ABOUT-ME SECTION*/
-    .about-Me{
+    #about-Me{
         flex-wrap:wrap;
         padding: 20px 5%;
     }
@@ -602,7 +602,7 @@ position: relative;
         width:300px;
     }
     /*CONTACT SECTION*/
-    .myContacts{
+    #myContacts{
         padding: 10px;
         margin-top:30px;
     }
@@ -678,7 +678,7 @@ position: relative;
         overflow: hidden;
     }
     /*HERO SECTION*/
-    .hero-section{
+    #hero-section{
         flex-wrap: wrap;
         padding:20px;
         align-items: center; 
@@ -721,7 +721,7 @@ position: relative;
         left: 60px;
     }
     /*ABOUT-ME SECTION*/
-    .about-Me{
+    #about-Me{
         flex-wrap: wrap;
         padding: 20px 5%;
     }
@@ -749,7 +749,7 @@ position: relative;
         width:300px;
     }
     /*CONTACT SECTION*/
-    .myContacts{
+    #myContacts{
         padding: 10px;
         margin-top: 30px;
     }
