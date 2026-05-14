@@ -105,12 +105,15 @@ body{
     opacity: 70px;
 }
 .buttons a{
-    gap:15px;
+    gap: 15px;
     border:1px solid #3b82f6;
     text-decoration: none;
     color:white;
     padding: 12px 25px;
     border-radius: 25px;
+}
+.buttons #hire{
+    margin-left: 10px;
 }
 #view-project{
     color:white;
